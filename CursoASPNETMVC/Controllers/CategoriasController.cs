@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using CursoASPNETMVC.Context;
-using CursoASPNETMVC.Models;
+using Persistencia.Contexts;
+using Modelo.Tabelas;
 using System.Data.Entity;
 using System.Net;
 
