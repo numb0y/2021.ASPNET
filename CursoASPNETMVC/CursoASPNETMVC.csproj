@@ -317,6 +317,10 @@
       <Project>{eefaf2d1-f9ee-4739-a894-24398d20ac9d}</Project>
       <Name>Modelo</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Persistencia\Persistencia.csproj">
+      <Project>{b17c1490-70ca-4c48-ba32-7f045c08b34e}</Project>
+      <Name>Persistencia</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Servico\Servico.csproj">
       <Project>{dc5a0f83-a515-4c76-b254-c37190f6c77b}</Project>
       <Name>Servico</Name>

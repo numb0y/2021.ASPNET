@@ -271,16 +271,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Context\EFContext.cs" />
     <Compile Include="Controllers\CategoriasController.cs" />
     <Compile Include="Controllers\FabricantesController.cs" />
     <Compile Include="Controllers\ProdutosController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Categoria.cs" />
-    <Compile Include="Models\Fabricante.cs" />
-    <Compile Include="Models\Produto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -299,6 +295,11 @@
     <Content Include="Views\Categorias\Delete.cshtml" />
     <Content Include="Views\Produtos\Index.cshtml" />
     <Content Include="Views\Produtos\Create.cshtml" />
+    <Content Include="Views\Produtos\Edit.cshtml" />
+    <Content Include="Views\Produtos\Details.cshtml" />
+    <Content Include="Views\Produtos\Delete.cshtml" />
+    <Content Include="Views\Produtos\_PorFabricante.cshtml" />
+    <Content Include="Views\Produtos\_PartialDetailsContentPanel.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -308,6 +309,22 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Context\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Modelo\Modelo.csproj">
+      <Project>{eefaf2d1-f9ee-4739-a894-24398d20ac9d}</Project>
+      <Name>Modelo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Persistencia\Persistencia.csproj">
+      <Project>{b17c1490-70ca-4c48-ba32-7f045c08b34e}</Project>
+      <Name>Persistencia</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Servico\Servico.csproj">
+      <Project>{dc5a0f83-a515-4c76-b254-c37190f6c77b}</Project>
+      <Name>Servico</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
