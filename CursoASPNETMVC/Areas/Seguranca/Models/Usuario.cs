@@ -8,5 +8,6 @@ namespace CursoASPNETMVC.Areas.Seguranca.Models
 {
     public class Usuario : IdentityUser
     {
+        public long? UsuarioId { get; set; }
     }
 }

@@ -13,13 +13,17 @@
         <div class="panel-body">
             @Html.Partial("~/Areas/Cadastros/Views/Produtos/_PartialEditContentPanel.cshtml", Model)
 
-                <div class="form-group">
-                    <div class="col-md-offset-2 col-md-10">
-                        <input type="submit" value="Gravar alterações" class="btn btn-default" />
-                    </div>
+            <div class="panel-footer panel-info">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Gravar alterações" class="btn btn-info" />
+                    @Html.ActionLink("Retornar para a listagem de FABRICANTES", "Index", null,
+                    new { @class = "btn btn-warning" })
                 </div>
+                <br />
+                <br />
             </div>
         </div>
+    </div>
 }
 @section ScriptPage{
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" )"></script>

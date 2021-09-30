@@ -262,6 +262,7 @@
     <Content Include="Areas\Seguranca\Views\Admin\Create.cshtml" />
     <Content Include="Areas\Seguranca\Views\Admin\Edit.cshtml" />
     <Content Include="Areas\Seguranca\Views\Admin\Delete.cshtml" />
+    <Content Include="Areas\Seguranca\Views\Admin\Details.cshtml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

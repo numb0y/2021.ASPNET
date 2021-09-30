@@ -100,6 +100,11 @@ namespace CursoASPNETMVC.Areas.Seguranca.Controllers
             }
             return View(uvm);
         }
+        // GET: Details
+        public ActionResult Details(long? id)
+        {
+            return View(id);
+        }
         // GET: Seguranca/Delete
         public ActionResult Delete(string id)
         {
