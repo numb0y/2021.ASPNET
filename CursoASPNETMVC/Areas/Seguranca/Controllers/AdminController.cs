@@ -30,6 +30,7 @@ namespace CursoASPNETMVC.Areas.Seguranca.Controllers
         }
 
         // GET: Seguranca/Admin
+        [Authorize]
         public ActionResult Index()
         {
             return View(GerenciadorUsuario.Users);
